@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipChooser">
+
+    <TextView
+        android:id="@+id/textChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a Tip:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroupTip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioFive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$5" />
+
+        <RadioButton
+            android:id="@+id/radioTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$10" />
+
+        <RadioButton
+            android:id="@+id/radioFifteen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$15" />
+
+        <RadioButton
+            android:id="@+id/radioTwenty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$20" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
